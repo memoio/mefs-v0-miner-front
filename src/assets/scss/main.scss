@@ -1,0 +1,26 @@
+table.table{
+  &.s1{
+    width: 100%;
+    height:100%;
+    text-align: left;
+    tr{
+      td{
+        line-height: 2;
+        padding: 2px 10px;
+        &:first-child{
+          padding-left:10px;
+        }
+        &:last-child{
+          padding-right:10px;
+        }
+      }
+      &:nth-child(1),&:not(:first-child):hover td{
+        color: rgb(149,149,149);
+        background:rgb(229,229,229);
+      }
+      &:not(:first-child) td{
+        border-bottom:2px solid rgb(236,236,236);
+      }
+    }
+  }
+}
